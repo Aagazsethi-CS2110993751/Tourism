@@ -1,0 +1,415 @@
+<html>
+<head>
+      <meta name="viewport " content="width=device-widh,initial-scale=1.0">
+	  <title>the weekend trip>
+	  </title>
+<style>
+*{
+   margin:0;
+   padding:0;
+   font-family:'roboto',sans-serif;
+}
+header{
+    height:60px;
+	
+	position:relative;
+}
+#div{
+  display:flex;
+}
+#div1{
+   flex:flex-wrap;
+   width:25%;
+}
+#div2{
+    flex:flex-wrap;
+	width:75%;
+	padding-top:20px;
+	
+}
+.menu{
+    padding:3px;
+	display:flex;
+	justify-content:space-around;
+    font-weight:bold;
+}
+.menu a{
+    color:purple;
+	text-decoration:none;
+}
+.menu a:hover{
+     color:red;
+	 
+}
+a.logo{
+   left:15px;
+   position:absoulte;
+   top:5px;
+   z-index:99;
+}
+a.logo img{
+     margin-left:15px;
+	 margin-top:30px;
+     border-radius:15px;
+	 height:50px;
+	 width:50px;
+}
+.container{
+    width:100%;
+	height:100%;
+	background-image:url(https://media.istockphoto.com/photos/summer-tropical-beach-background-glasses-and-palm-tree-reflex-picture-id1155508685?k=20&m=1155508685&s=612x612&w=0&h=_WYFV9P2l-qaubx7wV-WOf4cqfQxJBi-ruHodKHv7OU=);
+	
+	background-position:center;
+	background-size:cover;
+}
+.row{
+   display:flex;
+   height:88%;
+   align-items:center;
+}
+.col{
+    flex-basis:50%;
+	padding-left:40px;
+}
+h1{
+   color:green;
+   font-size:65px;
+}
+p{
+   color:black;
+   font-size:17px;
+ }
+.card{
+     width:200px;
+	 height:230px;
+	 display:inline-block;
+	 border-radius:10px;
+	 padding:15px;
+	 box-sizing:border-box;
+	 cursor:pointer;
+	 margin:10px 15px;
+	 overflow-wrap:break-word;
+	 
+	 background-position:center;
+	 background-size:cover;
+	 transition:transform 0.5s;
+}
+.card1{
+     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHj04A2nn9OYhHC1X7D8KbdF5SunYfF7147g&usqp=CAU);
+}
+.card2{
+     background-image:url(https://images.unsplash.com/photo-1526711657229-e7e080ed7aa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGFqJTIwbWFoYWwlMjBhZ3JhJTIwaW5kaWF8ZW58MHx8MHx8&w=1000&q=80);
+}
+.card3{
+     background-image:url(https://thumbs.dreamstime.com/b/word-goa-beach-concept-holiday-background-63477949.jpg);
+}
+.card4{
+     background-image:url(https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dWRhaXB1cnxlbnwwfHwwfHw%3D&w=1000&q=80);
+     
+}
+.card5{
+     background-image:url(https://images.unsplash.com/photo-1574150723397-44dbd90f3436?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmV3JTIwZGVsaGklMjBpbmRpYXxlbnwwfHwwfHw%3D&w=1000&q=80);
+}
+.card6{
+     background-image:url(https://images.unsplash.com/photo-1557846920-5efd5c916286?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bXVtYmFpfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+}
+.card:hover{
+      transform:translateY(-10px);
+}
+.h5{
+   color:blue;
+   text-shadow:0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size:8px;
+}
+.specials{
+     height:100%;
+     width:90%;
+	 margin:auto;
+	 padding-top:100px;
+	 text-align:center;
+	 font-size:30px;
+}
+.specials-col{
+     flex-basis:100%;
+	 border-radius:10px;
+	 margin-bottom:5;
+	 text-align:left;
+	 background:#fff3f3;
+	 padding:25px;
+	 cursor:pointer;
+	 display:flex;
+	 flex-direction:column;
+	 font-size:20px;
+	 
+	 
+}
+.specials-col p{	
+     padding:0;
+}	 
+.specials-col h3{	
+     margin-top:15px;
+	 text-align:left;
+}
+
+	
+footer{
+            position: relative;
+            width:1400px;
+            background-color:#082146;
+            min-height: 300px;
+            display: flex;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .social_icons
+        footer .menu
+
+        {
+            position: relative;
+            display: flex;  
+        
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            
+        }
+
+        footer .social_icons li
+        footer .menu li
+
+        {
+            list-style: none;
+        }
+
+        footer .social_icons li a{
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+
+        }
+
+        footer .social_icons li a:hover{
+            transform: translateY(-10px);
+
+        }
+
+        footer .menu li a{
+            font-size: 1.2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        footer .menu li a:hover{
+            opacity: 1;
+        }
+
+        footer p{
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size:15px;
+        }
+
+        footer .wave{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white url(sources/wave.png);
+            background-size: 1000px 100px;
+        }
+
+
+        footer .wave#wave1{
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWave 4s linear infinite;
+
+        }
+
+        @keyframes animateWave{
+            0%{
+                background-position-x: 1000px;
+
+            }
+            100%{
+                background-position-x: 0px;
+            }
+        }
+        
+
+
+    
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div id="div">
+<div id="div1">
+<a href="#" class="logo">
+<img src="C:\Users\SINGH\Desktop\pics for project\logoprj.jpg" alt="logo"></a>
+</div>
+<div class="menu" id="div2">
+
+
+        <a href="C:\Users\SINGH\Desktop\CHITKARA\PROJECT\header.html">Home</a>
+		<a href="C:\Users\SINGH\Desktop\CHITKARA\PROJECT\gallery.html">Gallery</a>
+		<a href="#">About</a>
+		<a href="#">Packages</a>
+		<a href="#">Transport</a>
+</div>
+</div>
+</nav>
+</header>
+    <div class="container ">
+	       <div class="row">
+		       <div class="col">
+			        <h1>THE WEEKEND BREAK</h1>
+					<p> The main push motives involved are 'escape,' 'socialising,' and 'self esteem' weekend breaks are generally viewed as active or 'doing' holidays.<p>
+				</div>
+				<div class="col">
+				    <div class="card card1">
+			        <h5>CHANDIGARH</h5>
+					<p> For nightlife, sightseeing tour, shopping, authentic Punjabi cuisine, festivals, architecture and design you must visit chandigarh.<p>
+					</div>
+					<div class="card card2">
+			        <h5>AGRA</h5>
+					<p>Agra is best known for the iconic Taj Mahal. There’s a lot to explore and experience, from monuments and mausoleums to parks and bazaars.<p>
+					</div>
+					<div class="card card3">
+			        <h5>GOA</h5>
+					<p>  surreal evenings, exotic nightlife, inspiring mornings and charming beaches, the place hypnotizes every soul and makes people fall for it.<p>
+					</div>
+					<div class="card card4">
+			        <h5 >UDAIPUR</h5>
+					<p> The best destination in India to marvel at the bygone-era palatial architecture. Udaipur will surely mesmerize you with its regal past, grand edifices, vibrant bazaars, and absolute serenity.<p>
+					</div>
+					<div class="card card5">
+			        <h5>DELHI</h5>
+					<p>With being home to many empires and cultures, Delhi turns into a world of its own. Many experts have given their remarks about this city that are beautiful and inspiring<p>
+					</div>
+					<div class="card card6">
+			        <h5>MUMBAI</h5>
+					<p> The city has hypnotized every soul that has come across its exclusivity and developed taste for it.Every artist calls this city their motivation.</p>
+					</div>
+				</div>
+				
+			</div>
+	 
+	 
+	</div>
+<div class="final">
+ <section class="specials">
+     <h1 style="font-family:cursive;color:orange; text-shadow:1px 1px 5px yellow;"><b>PLACES TO VISIT</b></h1><br>
+      <p>Here are the places you can explore</p><br>	 
+      <div class="row">
+	       <div class="specials-col ">
+		       <div>
+			       <h3>CHANDIGARH</h3>
+			       <p>The Rock Garden of Chandigarh,Elante mall,Sukhna Lake,Chandigarh Rose Garden,Mahendra Chaudhary Zoological Park are some places to explore</p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>AGRA</h3>
+			       <p> Taj Mahal,Agra Fort,Itimad-ud-Daulah's Tomb, Mehtab Bagh, Subhash Emporium  are some places to explore here</p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>GOA</h3>
+			       <p>Mangeshi Temple,Fontainhas, Reis Magos Fort, Church of Our Lady Of Hope,St. Alex Church , The Saturday Night Market are must to visit places</p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>UDAIPUR</h3>
+			       <p> you must visitBagore Ki Haveli Museum , City Palace of Udaipur ,Lake Pichola , Shri Ekling Ji Temple , Sajjangarh Monsoon Palace </p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>DELHI</h3>
+			       <p>you can visit places like Neemrana, Sariska Tiger Reserve, Vrindavan, Agra, Lansdowne, Parwanoo, Jaipur, Dharamsala</p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>MUMBAI</h3>
+			       <p>The top attractions to visit in Mumbai are: Marine Drive ,Bandra-Worli Sea Link , Gateway of India , Kanheri Caves ,Global Vipassana Pagoda .</p>
+				   
+				   
+				</div><br><br><br>
+			</div>
+ 
+ 
+ 
+ </section><br>
+ </div>
+</body>
+
+<br>
+<br>
+<br>
+<footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+        <ul class="social_icons" style="display: flex; list-style: none;">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/hHTteL5zbs8">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu" style="display: flex; list-style: none;">
+            <li>
+                <a class="a" href="eader.html">Home</a>
+            </li>
+            <li>
+                <a class="a" href="packages.html">Packages</a>
+            </li>
+            <li>
+                <a class="a" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a class="a" href="assignment.html">About us</a>
+            </li>
+            <li>
+                <a class="a" href="travelf.html">Plan you trip</a>
+            </li>
+        </ul>
+        <p><h1 style="color:#fff;">India Tours and Travels</h1></p>
+		
+        
+    </footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

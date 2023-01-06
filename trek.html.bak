@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Frozen Trek
+</title>
+<link rel="shortcut icon" href="https://image.shutterstock.com/z/stock-vector-india-travel-and-tours-logo-vector-travel-company-logo-design-country-map-leisure-travel-logo-526784530.jpg" type="image/png">
+<style>
+header{
+    height:70px;
+	border-bottom:1px;
+	border-bottom-color:black;
+	border-bottom-style:dashed;
+	position:relative;
+}
+#div{
+  display:flex;
+}
+#div1{
+   flex:flex-wrap;
+   width:25%;
+}
+#div2{
+    flex:flex-wrap;
+	width:75%;
+	padding-top:20px;
+	
+}
+.menu{
+    padding:3px;
+	display:flex;
+	justify-content:space-around;
+    font-weight:bold;
+}
+.menu a{
+    color:purple;
+	text-decoration:none;
+}
+.menu a:hover{
+     color:red;
+	 
+}
+a.logo{
+   left:15px;
+   position:absoulte;
+   top:5px;
+   z-index:99;
+}
+a.logo img{
+     margin-left:15px;
+	 margin-top:30px;
+     border-radius:15px;
+	 height:50px;
+	 width:50px;
+}
+footer{
+            position: relative;
+            width: 1400px;
+            background-color:#082146;
+            min-height: 300px;
+            display: flex;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .social_icons
+        footer .menu
+
+        {
+            position: relative;
+            display: flex;  
+        
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            
+        }
+
+        footer .social_icons li
+        footer .menu li
+
+        {
+            list-style: none;
+        }
+
+        footer .social_icons li a{
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+
+        }
+
+        footer .social_icons li a:hover{
+            transform: translateY(-10px);
+
+        }
+
+        footer .menu li a{
+            font-size: 1.2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        footer .menu li a:hover{
+            opacity: 1;
+        }
+
+        footer p{
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size:15px;
+        }
+
+        footer .wave{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white url(sources/wave.png);
+            background-size: 1000px 100px;
+        }
+
+
+        footer .wave#wave1{
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWave 4s linear infinite;
+
+        }
+
+        @keyframes animateWave{
+            0%{
+                background-position-x: 1000px;
+
+            }
+            100%{
+                background-position-x: 0px;
+            }
+        }
+#img{
+   height:600px;
+   background-image:url("https://cdn-cdmpb.nitrocdn.com/rZNETcJOPoYAUsaatFyuwQSmbYjUnBrQ/assets/static/optimized/treks/wp-content/uploads/2020/08/61b1cbe50391ff1666254cdfe50388bc.sham-valley-trek.jpg");
+   background-size:cover;
+}
+#img h1{
+   font-size:50px;
+   color:white;
+   font-weight:bold;
+   text-align:center;
+}
+.desc li{
+    display:inline-block;
+}
+.desc li h3{
+    color:red;
+}
+aside{
+	width:50%;
+	padding-left:15px;
+	margin-left:15px;
+	float:right;
+	
+	color:black;
+	background-color:aliceblue;
+}
+aside a{
+    color:black;
+	text-decoration:none;
+}
+aside a:hover{
+    color:orange;
+}
+aside li img{
+    margin-left:80px;
+	height:200px;
+	width:250px;
+}
+aside li h3{
+   margin-left:80px;
+   color:blue;
+   transition:0.5s ease-in-out;
+   
+}
+aside li h3:hover{
+    transform:translateY(-30%);
+	color:green;
+}
+#explore a{
+    text-decoration:none;
+	color:green;
+}
+#explore a:hover{
+    text-shadow:1px 1px 3px yellow;
+}
+
+
+
+         
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div id="div">
+<div id="div1">
+<a href="#" class="logo">
+<img src="C:\Users\SINGH\Desktop\pics for project\logoprj.jpg" alt="logo"></a>
+</div>
+<div class="menu" id="div2">
+
+
+        <a href="C:\Users\SINGH\Desktop\CHITKARA\PROJECT\header.html">Home</a>
+		<a href="C:\Users\SINGH\Desktop\CHITKARA\PROJECT\gallery.html">Gallery</a>
+		<a href="#">About</a>
+		<a href="#">Packages</a>
+		<a href="#">Transport</a>
+</div>
+</div>
+</nav>
+</header>
+<div id="img">
+<br>
+<br>
+<br>
+<h1 style="font-size:80px; ">The Frozen Trek</h1>
+</div>
+<div id="desc">
+<ul class="desc" style="list-style:none;">
+<li><h3>Duration</h3><h2>12nights 13days</h2></li>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<li><h3>Area</h3><h2>Ladakh,Himalaya</h2></li>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<li><h3>Best Season</h3><h2>Mid January-Mid February</h2></li>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<li><h3>Total trekking</h3><h2>80Kms</h2></li>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+</ul>
+<h1>The Frozen Trek</h1>
+<p style="font-size:18px;">Featuring a surreal backdrop of nature colours, the Frozen River Trek, commonly known as the Chadar Trek, is one of the challenging treks in the Ladakh region. The strenuous mountain trail on the ice-clogged river under the blue winter sky passes through valleys, mountain caves and frozen waterfalls. It is one of the most arduous treks of Indian Himalaya as the trekkers will pass through craggy rocks and the temperature may dip to below minus 10 degrees, a rare climatic condition which can be difficult to survive.
+
+The Frozen River Trek, which is one of the popular winter treks, is also one of the longest trekking trails in the Indian Himalayan region that covers an entire stretch of 90 kilometres in 8 chilly days. Like a walk to paradise, the Chadar Trek swipes several trekkers’ dreams making it a part of their diary. The journey leads off from Ladakh to the snowbound villages of the Zanskar Valley.
+</p>
+</div>
+<br>
+<div>
+<aside>
+<a href="#"><h1 style="text-align:center;">Explore More Packages</h1></a>
+<ul style="list-style:none;">
+<li>
+<img src="https://www.tourmyindia.com/packages-tour-india/pilgrimage-tour-packages/images/hemkund-sahib-yatra.jpg">
+<h3>Hemkund Sahib yatra<h3>
+</li>
+<li>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe_4_HjkMDplY-OV7qJJ9t-7yTxm-rsh3U5w&usqp=CAU">
+<h3>Classical India Tour</h3>
+</li>
+<li>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Taj-Mahal.jpg/800px-Taj-Mahal.jpg">
+<h3>Golden Triangle Tour</h3>
+</li>
+</aside>
+<h2 style="color:red;">Highlights</h2>
+<ul>
+<li>Trek along the traditional winter trading route connecting Padum to Ladakh along the frozen Zanskar river.</li>
+<br>
+<li>This is a real adventure with only a couple of groups making the trek every year. The conditions on the river can be variable so a flexible approach is required!</li>
+<br>
+<li>Gain insight into the remote cultures of Zanskar and Ladakh and you will have the chance to stay with local Zanskaris along the way.
+</li>
+<br>
+<li>Go for a sightseeing tour to explore the Gompas and forts around Leh as you let your body acclimatise to the altitude.
+Spot rare Ladakhi animals like snow leopard, ibex, Himalayan Thar, blue sheep, etc.</li>
+</ul>
+<br>
+<br>
+<div>
+<h2 style="color:red;">Best Time to Do Frozen River Trek
+</h2>
+<h3>January to February : This is the time when the upper layer of the Zanskar River freezes. The river looks like a sheet of ice; hence, it is referred in the local language as ‘Chadar’.
+</h3>
+</div>
+</div>
+<br>
+<h2 style="text-align:center; color:red;">TOUR WITH US</h2>
+<div id="explore" style="height:400px;">
+<ul>
+<li><a href="#">EXPLORE THEMES</a></li><br>
+<li><a href="#">EXPLORE DESTINATIONS</a></li><br>
+<li><a href="#">EXPLORE CULTURE</a></li><br>
+<li><a href="#">EXPLORE TRIPS</a></li><br>
+<li><a href="#">EXPLORE GALLERY</a></li><br>
+<li><a href="#">PLAN YOUR TRIP</a></li><br>
+</ul>
+</div>
+<br>
+</body>
+<br>
+<footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+        <ul class="social_icons" style="display: flex; list-style: none;">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/hHTteL5zbs8">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+			<br>
+        </ul>
+        <ul class="menu" style="display: flex; list-style: none;">
+            <li>
+                <a class="a" href="header.html">Home</a>
+            </li>
+            <li>
+                <a class="a" href="packages.html">Packages</a>
+            </li>
+            <li>
+                <a class="a" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a class="a" href="about.html">About us</a>
+            </li>
+            <li>
+                <a class="a" href="travelf.html">Plan you trip</a>
+            </li>
+        </ul>
+        <p><h2 style="color:#fff;">India Tours and Travels</h2></p>
+		
+        
+    </footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

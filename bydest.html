@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages- By Destination</title>
+    <style>
+        *{
+            margin: 1px;
+            padding: 2px;
+            font-family: sans-serif;
+            
+        }
+header{
+    height:60px;
+	
+	position:relative;
+}
+#div{
+  display:flex;
+}
+#div1{
+   flex:flex-wrap;
+   width:25%;
+}
+#div2{
+    flex:flex-wrap;
+	width:75%;
+	padding-top:20px;
+	
+}
+.menu{
+    padding:3px;
+	display:flex;
+	justify-content:space-around;
+    font-weight:bold;
+}
+.menu a{
+    color:purple;
+	text-decoration:none;
+}
+.menu a:hover{
+     color:red;
+	 
+}
+a.logo{
+   left:15px;
+   position:absoulte;
+   top:5px;
+   z-index:99;
+}
+a.logo img{
+     margin-left:15px;
+	 margin-top:30px;
+     border-radius:15px;
+	 height:50px;
+	 width:50px;
+}
+        .flex-container{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+   
+        .bold-text{
+            color: rgb(11, 207, 221);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            text-shadow: silver;
+            font-weight: bold;
+        }
+        
+        .center{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size:50px;
+        }
+        .img-text{
+            color:rgb(224, 237, 238);
+            font-size: 60px;                 
+            font-style: italic;
+            font-family:serif;
+            font-weight: bold;
+            text-shadow: 1px 2px 1px lightskyblue;
+        
+        }
+        .flex-container > div{
+            width: 24%;
+            border: sandybrown;
+            box-sizing: border-box;
+
+        }
+        .place-name{
+            color: rgb(241, 234, 234);
+            background-color: rgb(48, 158, 223);
+            text-align: center;
+            font-style: italic;
+            font-family: serif;
+            font-weight: bold;
+            text-shadow: 1px 2px 1px lightgrey;
+            font-size: 24px;
+            padding: 16px 32px;
+        }
+        .place-name:hover{
+            background-color: rgb(1, 20, 20);
+        }
+        .overlay {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+        }
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        .text {
+            background-color: #4CAF50;
+            color: white;
+            
+        }
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .container {
+            position: relative;
+            width: 50%;
+        }
+        .h2-text{
+            font-size: 30px;
+            font-style: italic;
+            text-align: center;
+        }
+footer{
+            position: relative;
+            width:1400px;
+            background-color:#082146;
+            min-height: 300px;
+            display: flex;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .social_icons
+        footer .menu
+
+        {
+            position: relative;
+            display: flex;  
+        
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            
+        }
+
+        footer .social_icons li
+        footer .menu li
+
+        {
+            list-style: none;
+        }
+
+        footer .social_icons li a{
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+
+        }
+
+        footer .social_icons li a:hover{
+            transform: translateY(-10px);
+
+        }
+
+        footer .menu li a{
+            font-size: 1.2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        footer .menu li a:hover{
+            opacity: 1;
+        }
+
+        footer p{
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size:15px;
+        }
+
+        footer .wave{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white url(sources/wave.png);
+            background-size: 1000px 100px;
+        }
+
+
+        footer .wave#wave1{
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWave 4s linear infinite;
+
+        }
+
+        @keyframes animateWave{
+            0%{
+                background-position-x: 1000px;
+
+            }
+            100%{
+                background-position-x: 0px;
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+<header>
+<nav>
+<div id="div">
+<div id="div1">
+<a href="#" class="logo">
+<img src="https://image.shutterstock.com/z/stock-vector-india-travel-and-tours-logo-vector-travel-company-logo-design-country-map-leisure-travel-logo-526784530.jpg" alt="logo"></a>
+</div>
+<div class="menu" id="div2">
+
+
+        <a href="header.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="abtus.html">About</a>
+		<a href="packages.html">Packages</a>
+		
+</div>
+</div>
+</nav>
+</header>
+    <div id="main-img">
+        <img src=" https://imgcld.yatra.com/ytimages/image/upload/t_s…auto:good_f_jpg/v1478504097/Holidays_General3.jpg" style="height:min-content;
+        width: 100%;
+        height:70%;
+		
+        border: 2px solid saddlebrown;
+        box-sizing: border-box;" >
+        <div class="center"><span class="img-text">BY DESTINATION</span></div>
+    
+    </div>
+    <p></p>
+     Home > India Tour Packages > Packages By Destinations</p>
+    <hr>
+    <br>
+    <br>
+    <h1 style="color: rgb(10, 10, 10);text-align: center;font-size:50px;">India Tour Packages <div class="bold-text">BY DESTINATION </div></h1>
+    <br>
+    <article   aria-expanded="true"  class="" style="max-height: none; height: fit-content;font-size:25px;">
+    <p>India is an indulgence for a traveler. One nation has spectacular range of attractions. In its geographical boundaries it covers snow laded mountains, scorching deserts, lush valleys, gorgeous beaches, vibrant cities, serene wildlife sanctuaries, historical sites and every attraction one can imagine. India offers limitless options.
+    </p>
+    <p> Popular destinations of India like Rajasthan, Himachal Pradesh or Uttarakhand, Goa, Kerala Kashmir, Andaman or the North East open multiple choices of attractions, pleasures, cultures, traditions, gastronomy and other delights.
+        
+        Travelers seeking to visit are often found in dilemma as where to go. India Tour Packages by destination are planned itineraries to attractive holiday locations. These tour packages plan a visit to a destination in an incredible way to relish the attractions, the hospitality, and the experiences and create cherished memories</p>
+    </article> 
+    <br>   
+    <br>
+    <div style="font-size:25px;">
+        <h2 class="h2-text"style="font-size:30px;"><span class="bold-text">Best Selling Holiday</span> Destinations in India by State</h2>  
+        <br>
+        <p>Experience the geographical &amp; cultural diversity of various states of the country with our wide range of India tour packages! </p>
+    </div>
+    <br>
+    <div  class="flex-container" >
+      
+            <div class="container">
+            
+               <img src="https://www.tourism-of-india.com/images/packages-by-destination/himachal-tour-img.jpg" width="264" height="273" alt="" style="border-radius:10px; margin:0 10px 0 0px;" class="image">
+               <div class="overlay">
+                    <div class="place-name">Himachal</div>
+                </div>
+
+            </div>
+            <div class="container" > 
+             
+               <img src="https://www.tourism-of-india.com/images/packages-by-destination/kashmir-img.jpg" width="264" height="273" alt="" style="border-radius:10px; margin:0 10px 0 0px;" class="image">
+              
+                <div class="overlay">
+                
+                    <div class="place-name"  >Kashmir</div>
+                </div>
+            </div>
+         
+            <div class="container">
+               <img src="https://www.tourism-of-india.com/images/packages-by-destination/ladakh-img.jpg" width="264" height="273" alt="" style="border-radius:10px; margin:0 10px 0 0px;" class="image">
+            
+            <div class="overlay">
+             <div class="place-name" >Ladakh</div>
+            </div> 
+                
+        </div>
+         <div class="container">
+               <img src="https://www.tourism-of-india.com/images/packages-by-destination/rajasthan-img-1.jpg" width="264" height="273" alt="" style="border-radius:10px; margin:0 10px 0 0px;" class="image">
+            
+                <div class="overlay">
+                    <div class="place-name">Rajasthan</div>
+                </div>    
+        </div>            
+    </div>
+
+    <div class="flex-container">         
+         
+        <div  class="container">
+               <img src="https://www.tourism-of-india.com/images/packages-by-destination/uttarakhand-img.jpg" width="264" height="273" alt="" style="border-radius:10px; margin:0 10px 0 0px;" class="image">
+               
+                <div class="overlay">
+                    <div class="place-name">Uttarakhand</div>
+                </div>
+        </div>
+        <div class="container">
+               <img src="https://www.tourism-of-india.com/images/packages-by-destination/karnataka-img.jpg" width="264" height="273" alt="" style="border-radius:10px; margin:0 10px 0 0px;" class="image">
+                <div class="overlay">
+                    <div class="place-name">Karnataka</div>
+                </div>
+        </div>
+        <div  class="container" >
+            
+               <img src="https://www.tourism-of-india.com/images/packages-by-destination/tamil-nadu-img.jpg" width="264" height="273" alt="" style="border-radius:10px; margin:0 10px 0 0px;" class="image">
+              
+                <div class="overlay">
+                    <div class="place-name">Tamilnadu</div>
+                </div>    
+               
+        </div> 
+        <div class="container">
+               <img src="https://www.tourism-of-india.com/images/packages-by-destination/adaman-img.jpg" width="264" height="273" alt="" style="border-radius:10px; margin:0 10px 0 0px;" class="image">
+            
+                <div class="overlay">
+                    <div class="place-name">Andaman</div>
+                </div>    
+                     
+                
+        </div>
+               
+    </div></div> 
+    </div>
+           
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+        <ul class="social_icons" style="display: flex; list-style: none;">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/hHTteL5zbs8">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu" style="display: flex; list-style: none;">
+            <li>
+                <a class="a" href="header.html">Home</a>
+            </li>
+            <li>
+                <a class="a" href="packages.html">Packages</a>
+            </li>
+            <li>
+                <a class="a" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a class="a" href="abtus.html">About us</a>
+            </li>
+            <li>
+                <a class="a" href="plan.html">Plan you trip</a>
+            </li>
+        </ul>
+        <p><h1 style="color:#fff;">India Tours and Travels</h1></p>
+		
+        
+    </footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

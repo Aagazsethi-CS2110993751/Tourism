@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages-By weather</title>
+    <style>
+	header{
+    height:70px;
+	border-bottom:1px;
+	border-bottom-color:black;
+	border-bottom-style:dashed;
+	position:relative;
+}
+#div{
+  display:flex;
+}
+#div1{
+   flex:flex-wrap;
+   width:25%;
+}
+#div2{
+    flex:flex-wrap;
+	width:75%;
+	padding-top:20px;
+	
+}
+.menu{
+    padding:3px;
+	display:flex;
+	justify-content:space-around;
+    font-weight:bold;
+}
+.menu a{
+    color:purple;
+	text-decoration:none;
+}
+.menu a:hover{
+     color:red;
+	 
+}
+
+        *{
+            margin: 1px;
+            padding: 5px;
+             
+            
+        }
+        #background-img{
+            height: 700px;
+            width: 100%;
+            background-size:cover;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+            display: block;
+            width: 100%;
+            
+        }
+        #background-img:hover{
+            transform: scaleX(-1);
+        }
+           
+        
+        .background-div{ 
+            background-color: #858282;
+            border: black;
+            position: relative;
+             
+        }
+        #division-weather{
+            display: flex;
+            height: auto;
+            width: 45%;
+        }
+         
+        div.poloroid{
+            
+            width: 50%;
+            border-radius: 5px;
+            
+            background-color:  #f7f7f7;
+            box-shadow: 0 8px 16px 0 rgba(19, 21, 22, 0.5), 0 10px 25px 0 rgba(24, 23, 23, 0.19);
+            margin-bottom: 25px;
+            display: inline-block;
+            
+            
+        }
+        .read-more:hover{
+            background-color: rgb(1, 20, 20);
+        }
+        
+    
+        .weather-name{
+            height: auto;
+            width: 45%;
+            background-color: #dbdbdb;
+            text-align: center;
+            font-size: 40px;
+            color:rgb(98, 180, 169);
+            font-family: sans-serif;
+            font-weight: bold;
+            text-shadow: 1px 2px grey;
+            text-align: center;
+            padding: 6px;
+
+        }
+        #table-weather{
+            height: auto;
+            width: 100%;
+            border:2px solid rgb(88, 86, 86);
+            padding: 10px;
+        }
+        span{
+            font-family: sans-serif;
+            font-size: 48px;
+            color: rgb(9, 211, 177);
+            text-shadow: 1px 2px gray;
+            text-align: center;
+
+        }
+        h1{
+            text-align: center;
+        }
+        h1 div{
+            font-weight: bold;
+            text-shadow: 1px 2px gray;
+            font-style: italic;
+            text-align: center;
+        }
+        .about-para{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(107, 102, 102);
+            text-align: center;
+            letter-spacing: 0.3px;
+            font-size: 22px;
+        }
+        div.container {
+            text-align: center;
+            padding: 14px 24px;
+        }
+        #table-center{
+            padding-left: 40px;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+             
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+            opacity: 0.9;
+            background-repeat: no-repeat;
+}
+        .background-div:hover .overlay {
+            bottom: 0;
+            height: 100%;
+}
+        #text {
+            white-space: nowrap; 
+            color: rgb(241, 235, 235);
+            font-size: 60px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+        
+      
+        
+    a.logo{
+   left:15px;
+   position:absoulte;
+   top:5px;
+   z-index:99;
+}
+a.logo img{
+     margin-left:15px;
+	 margin-top:20px;
+     border-radius:15px;
+	 height:50px;
+	 width:50px;
+}
+footer{
+            position: relative;
+            width:1400px;
+            background-color:#082146;
+            min-height: 300px;
+            display: flex;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .social_icons
+        footer .menu
+
+        {
+            position: relative;
+            display: flex;  
+        
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            
+        }
+
+        footer .social_icons li
+        footer .menu li
+
+        {
+            list-style: none;
+        }
+
+        footer .social_icons li a{
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+
+        }
+
+        footer .social_icons li a:hover{
+            transform: translateY(-10px);
+
+        }
+
+        footer .menu li a{
+            font-size: 1.2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        footer .menu li a:hover{
+            opacity: 1;
+        }
+
+        footer p{
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size:15px;
+        }
+
+        footer .wave{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white url(sources/wave.png);
+            background-size: 1000px 100px;
+        }
+
+
+        footer .wave#wave1{
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWave 4s linear infinite;
+
+        }
+
+        @keyframes animateWave{
+            0%{
+                background-position-x: 1000px;
+
+            }
+            100%{
+                background-position-x: 0px;
+            }
+		
+   
+        
+    </style>
+</head>
+<body>
+<header>
+<nav>
+<div id="div">
+<div id="div1">
+<a href="#" class="logo">
+<img src="https://image.shutterstock.com/z/stock-vector-india-travel-and-tours-logo-vector-travel-company-logo-design-country-map-leisure-travel-logo-526784530.jpg" alt="logo"></a>
+</div>
+<div class="menu" id="div2">
+
+
+        <a href="header.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="abtus.html">About</a>
+		<a href="packages.html">Packages</a>
+		<a href="plan.html">Plan your Trip</a>
+</div>
+</div>
+</nav>
+</header>
+     <div class="background-div">
+         <img src="https://media.istockphoto.com/photos/winter-and-spring-landscape-with-blue-sky-picture-id639882424?b=1&k=20&m=639882424&s=170667a&w=0&h=NSwCjA420qaVvX-y5VdUtEGUZujzX4uDnyQfTw-312M=" alt="" id="background-img" >
+         <div class="overlay">
+             <div id="text">Packages by Weather</div>
+         </div>
+          
+     </div>
+     <p>
+        Home > India Tour Packages > Packages By Destinations</p>
+       <hr>
+       <br>
+       <br>
+       <h1><span>India Tour Packages </span> <div>BY WEATHER </div></h1>
+       <br>
+       <table id="table-weather">
+           <tr>
+               <td class="weather-name">
+                   WINTER
+               </td>
+               <td class="weather-name">
+                   SUMMER
+               </td>
+           </tr>
+           <tr>
+               <td class="about-para">
+                <p>Winters in India are spectacular. The true splendor of the country shines in the season of pleasant climate. The geographical diversity encompasses mighty peaks to azure shores, scenic deserts to lush greens. The beaches in the country are glorious and tempting.</p>
+                <p>Plan memorable Winter Tours with pre-planned packages. Check out the paradisiacal beaches of Andaman and Goa, snow covered hills in Manali, Uttarakhand and Kashmir, vivacious Rajasthan and Gujarat, pleasant Kerala and other enchantments of the blessed country.</p>
+                
+               </td>
+               <td class="about-para">
+                Summer has arrived, so you need to make immediate plans for a perfect summer holiday in India. India spoils visitors with exciting choices for a summer vacation with your friends, family and loved ones. Enjoy pleasant weather, explore wonderful sights, and interesting things to do, while you escape high temperatures and hustle-bustle of cities. Before the mercury gets rising, be prepared with your travel plans for summer holiday destinations in India.
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <div class="poloroid">
+                       <img src="https://www.tourism-of-india.com/pictures/tourintro/magnificent-shimla-manali-tour-family-special-804.jpeg" alt="" style="width:100%" >
+                       <div class="container">Magnificient Shimla-Manali Tour</div>
+                        
+                   </div>
+                   <div class="poloroid">
+                    <img src="https://www.tourism-of-india.com/pictures/tourintro/best-of-kerala-1078.jpeg" alt="" style="width:100%;display: inline-block;" >
+                    <div class="container">Best of Kerela Tour</div>
+                     
+                </div>
+                <div class="poloroid">
+                    <img src=" https://www.tourism-of-india.com/pictures/tourintro/golden-triangle-tour-with-varanasi-813.jpeg" alt="" style="width:100%;display: inline-block;" >
+                    <div class="container">Golden Triangle Tour with Varanasi</div>
+                     
+                </div>
+                <div class="poloroid">
+                    <img src="https://www.tourism-of-india.com/pictures/tourintro/colorful-rajasthan-tour-846.jpeg" alt="" style="width:100%;display: inline-block;" >
+                    <div class="container">Colourful Rajasthan Tour</div>
+                </div>
+                
+               </td>
+               <td>
+                <div class="poloroid">
+                    <img src=" https://www.tourism-of-india.com/blog/wp-content/uploads/2017/04/manali.jpg" alt="" style="width:100%;display: inline-block;" >
+                    <div class="container">Manali Tour</div>
+                </div>
+                <div class="poloroid">
+                    <img src="  https://www.indianholiday.com/pictures/tourintro/extended-darjeeling-gangtok-tour-79.jpeg?360x242" alt="" style="width:100%;display: inline-block;" >
+                    <div class="container"> Darjeeling Gangtok Tour</div>
+                </div>
+                <div class="poloroid">
+                    <img src="  https://www.indianholiday.com/pictures/tourintro/srinagar-leh-manali-bike-trip-1405.jpeg?360x242" alt="" style="width:100%;display: inline-block;" >
+                    <div class="container"> Srinagar Leh Manali Tour</div>
+                </div>
+                <div class="poloroid">
+                    <img src="  https://www.indianholiday.com/pictures/tourintro/badrinath-kedarnath-tour-42.jpeg?360x242" alt="" style="width:100%;display: inline-block;" >
+                    <div class="container">Badrinath Kedarnath Tour</div>
+                </div>
+
+               </td>
+
+           </tr>
+       </table>
+  
+<footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+        <ul class="social_icons" style="display: flex; list-style: none;">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/hHTteL5zbs8">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu" style="display: flex; list-style: none;">
+            <li>
+                <a class="a" href="header.html">Home</a>
+            </li>
+            <li>
+                <a class="a" href="packages.html">Packages</a>
+            </li>
+            <li>
+                <a class="a" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a class="a" href="abtus.html">About us</a>
+            </li>
+            <li>
+                <a class="a" href="plan.html">Plan you trip</a>
+            </li>
+        </ul>
+        <p><h1 style="color:#fff;">India Tours and Travels</h1></p>
+		
+        
+    </footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>     
+</body>
+</html>

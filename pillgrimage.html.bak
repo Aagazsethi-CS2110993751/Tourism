@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>PILGRIMAGE
+</title>
+<link rel="shortcut icon" href="https://image.shutterstock.com/z/stock-vector-india-travel-and-tours-logo-vector-travel-company-logo-design-country-map-leisure-travel-logo-526784530.jpg" type="image/png">
+<style>
+*{
+  font-size:22px;
+}
+header{
+    height:70px;
+	border-bottom:1px;
+	border-bottom-color:black;
+	border-bottom-style:dashed;
+	position:relative;
+}
+#div{
+  display:flex;
+}
+#div1{
+   flex:flex-wrap;
+   width:25%;
+}
+#div2{
+    flex:flex-wrap;
+	width:75%;
+	padding-top:20px;
+	
+}
+.menu{
+    padding:3px;
+	display:flex;
+	justify-content:space-around;
+    font-weight:bold;
+}
+.menu a{
+    color:purple;
+	text-decoration:none;
+}
+.menu a:hover{
+     color:red;
+	 
+}
+body{
+    background-color:white;
+}
+h1{
+    text-align:center;
+	color:black;
+}
+a.logo{
+   left:15px;
+   position:absoulte;
+   top:5px;
+   z-index:99;
+}
+a.logo img{
+     margin-left:15px;
+	 margin-top:30px;
+     border-radius:15px;
+	 height:50px;
+	 width:50px;
+}
+#rav{
+   display:flex
+}
+#heritage{
+   flex:flex-wrap;
+   width:50%;
+   
+}
+#pic{
+   flex:flex-wrap;
+   width:50%;
+}
+#pic img{
+    width:85%;
+	padding-left:30px;
+}
+#div4{
+     background-color:#48d3d017;
+	 width:100%;
+	 display:flex;
+	 justify-content:space-around;
+	 border:1px solid black;
+}
+.div5{
+    width:20%;
+	flex:flex-wrap;
+	
+}
+.div5 h3{
+   text-align:center;
+   color:red;
+}
+#div6{
+     background-color:#48d3d017;
+	 width:100%;
+	 display:flex;
+	 justify-content:space-around;
+	 border:1px solid black;
+}
+.div7{
+    width:20%;
+	flex:flex-wrap;
+	
+}
+img:hover{
+    opacity:0.5;
+	transform:translateX(5%);
+}
+.div7 h3{
+   text-align:center;
+   color:black;
+}
+h3:hover{
+   color:green;
+   transform:translateX(5%);
+}
+#div8{
+     background-color:#48d3d017;
+	 width:100%;
+	 display:flex;
+	 justify-content:space-around;
+	 border:1px solid black;
+
+}
+.h1{
+    text-shadow:1px 2px 5px pink;
+}
+#div9{
+    background-color:#48d3d017;
+	height:370px;
+	 width:100%;
+	 display:flex;
+	 justify-content:space-around;
+	 border:1px solid black;
+}
+footer{
+            position: relative;
+            width:1400px;
+            background-color:#082146;
+            min-height: 300px;
+            display: flex;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .social_icons
+        footer .menu
+
+        {
+            position: relative;
+            display: flex;  
+        
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            
+        }
+
+        footer .social_icons li
+        footer .menu li
+
+        {
+            list-style: none;
+        }
+
+        footer .social_icons li a{
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+
+        }
+
+        footer .social_icons li a:hover{
+            transform: translateY(-10px);
+
+        }
+
+        footer .menu li a{
+            font-size: 1.2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        footer .menu li a:hover{
+            opacity: 1;
+        }
+
+        footer p{
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size:15px;
+        }
+
+        footer .wave{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white url(sources/wave.png);
+            background-size: 1000px 100px;
+        }
+
+
+        footer .wave#wave1{
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWave 4s linear infinite;
+
+        }
+
+        @keyframes animateWave{
+            0%{
+                background-position-x: 1000px;
+
+            }
+            100%{
+                background-position-x: 0px;
+            }
+        }
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div id="div">
+<div id="div1">
+<a href="#" class="logo">
+<img src="https://image.shutterstock.com/z/stock-vector-india-travel-and-tours-logo-vector-travel-company-logo-design-country-map-leisure-travel-logo-526784530.jpg" alt="logo"></a>
+</div>
+<div class="menu" id="div2">
+
+
+        <a href="header.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="abtus.html">About</a>
+		<a href="packages">Packages</a>
+		<a href="plan.html">Plan your Trip</a>
+</div>
+</div>
+</nav>
+</header>
+<br>
+<br>
+<h1 style="font-size:50px;"><span style="color:red;font-size:50px;">PILGRIMAGE</span> Sites in India</h1>
+<br>
+<div id="rav" style="color:black; font-family:fangsong;">
+<div id="heritage"><h3>
+The land of versatility - India is second to none, more when it becomes an object of study, analysis and attention all because of the different religions to which it serves as amalgamating pot. Every religion has its significance and a proposed way of life to live it as ideally as possible. It is possible to get a glimpse of each of them and revel in the rich knowledge, the way followers of different faiths try to connect with their Creator at various pilgrimage sites in India.
+</h3>
+</div>
+<div id="pic">
+<img src="https://www.pilgrimagetour.in/blog/wp-content/uploads/2019/10/Popular-Pilgrimages-and-Religious-Destinations-in-India-696x519.jpg" height="380px" width="500px">
+</div>
+</div>
+<br>
+<br>
+<h1 class="h1">Popular Hindu Pilgrimage Sites in India</h1>
+<br>
+<div id="div4">
+<div class="div5">
+<img src="https://www.tourmyindia.com/pilgrimage/images/dwarka.jpg" width="215px">
+<h3>Dwarka, Gujarat</h3>
+</div>
+
+<div class="div5">
+<img src="https://www.tourmyindia.com/pilgrimage/images/chidambaram-temple.jpg" width="215px">
+<h3>Chidambara Temple,Tamil nadu</h3>
+</div>
+<div class="div5">
+<img src="https://www.tourmyindia.com/pilgrimage/images/nashik-pilgrimage.jpg" width="215px">
+<h3>Nashik,Maharashtra</h3>
+</div>
+<div class="div5">
+<img src="https://www.tourmyindia.com/pilgrimage/images/pushkar.jpg" width="215px">
+<h3>Pushkar,Rajasthan</h3>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h1 class="h1">Popular Sikh Pilgrimage Sites in India</h1>
+<br>
+<div id="div6">
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/golden-temple.jpg" width="215px">
+<h3>Golden Temple,Amritsar</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/hemkund-sahib.jpg" width="215px">
+<h3>Hemkund Sahib,Uttrakhand</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/anadpur-sahib.jpg" width="215px">
+<h3>Anandpur Sahib,Punjab</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/patna-sahib.jpg" width="215px">
+<h3>Patna Sahib,Bihar</h3>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h1 class="h1">Popular Buddhists Pilgrimage Sites in India</h1>
+<br>
+<div id="div6">
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/sanchi.jpg" width="215px">
+<h3>Sanchi,Madhya Pradesh</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/vaishali.jpg" width="215px">
+<h3>Vaishali,Bihar</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/amaravati.jpg" width="215px">
+<h3>Amravati,Andhra Pradesh</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/kushinagar.jpg" width="215px">
+<h3>Khushi Nagar,Uttar Pradesh</h3>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h1 class="h1">Popular Muslim Pilgrimage Sites in India</h1>
+<br>
+<div id="div8">
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/dargah-hazrat-nizamuddin.jpg" width="215px">
+<h3>Dargah Hazrat Nizamuddin,Delhi</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/haji-ali-dargah.jpg" width="215px">
+<h3>Hazi Ali Dargah,Maharashtra</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/ajmer-dargah.jpg" width="215px">
+<h3>Dargah Khwaja Moin-ud-din,Ajmer</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/dargah-hazratbal.jpg" width="215px">
+<h3>Dargah Hazratbul,Jammu & Kashmir</h3>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h1 class="h1">Popular Jain Temples and Pilgrimages in India</h1>
+<br>
+<div id="div9">
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/shantinath-jain-tirth.jpg" width="215px">
+<h3>Shantinath Jain Teerath,Maharashtra</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/palitana-jain-temples.jpg" width="215px">
+<h3>Palitana Jain Temple,Gujarat</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/jain-temple-gummileru.jpg" width="215px">
+<h3>Jain Temple,Andhra Pradesh</h3>
+</div>
+<div class="div7">
+<img src="https://www.tourmyindia.com/pilgrimage/images/dilwara-temple.jpg" width="215px">
+<h3>Dilwara Temple,Rajasthan</h3>
+</div>
+</div>
+</body>
+<footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+        <ul class="social_icons" style="display: flex; list-style: none;">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/hHTteL5zbs8">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu" style="display: flex; list-style: none;">
+            <li>
+                <a class="a" href="header.html">Home</a>
+            </li>
+            <li>
+                <a class="a" href="packages.html">Packages</a>
+            </li>
+            <li>
+                <a class="a" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a class="a" href="assignment.html">About us</a>
+            </li>
+            <li>
+                <a class="a" href="plan.html">Plan you trip</a>
+            </li>
+        </ul>
+        <p><h1 style="color:#fff;">India Tours and Travels</h1></p>
+		
+        
+    </footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

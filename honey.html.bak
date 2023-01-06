@@ -1,0 +1,432 @@
+
+<html>
+<head>
+<style>
+*{
+  margin:0;
+  padding:0;
+  font-family:arial;
+}
+.header{
+   width:100%;
+   height:60px;
+   
+   
+}
+a.logo{
+   left:15px;
+   position:absoulte;
+   top:5px;
+   z-index:99;
+}
+a.logo img{
+     margin-left:15px;
+	 margin-top:30px;
+     border-radius:15px;
+	 height:50px;
+	 width:50px;
+}
+
+#div{
+  display:flex;
+}
+#div1{
+   flex:flex-wrap;
+   width:25%;
+}
+#div2{
+    flex:flex-wrap;
+	width:75%;
+	padding-top:20px;
+	
+}
+.menu{
+    padding:3px;
+	display:flex;
+	justify-content:space-around;
+    font-weight:bold;
+}
+.menu a{
+    color:purple;
+	text-decoration:none;
+}
+.menu a:hover{
+     color:red;
+	 
+}
+.bg{
+   height:100%;
+   width:100%;
+   background-image:url(https://cdn0.weddingwire.in/article/5149/3_2/1280/jpg/19415-honeymoon-dresses-for-couples-snapsoulindia-lead.webp);
+   background-repeat:no-repeat;
+  
+   background-size:cover;
+   background-position:center;
+}
+.trips{
+   width:100%;
+   display:flex;
+   flex-wrap:wrap;
+}
+.places{
+    flex-basis:32%;
+	border-radius:10px;
+	margin-bottom:30px;
+	margin-left:20px;
+	position:relative;
+	overflow:hidden;
+	
+}
+.places img{
+    width:100%
+}
+.layer{
+     background:transparent;
+	 height:100%;
+	 width:100%;
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 transition:0.5s;
+	 
+}
+.layer:hover{
+     background:rgba(226,0,0,0.7);
+}
+.layer h3{
+    width:100%;
+	font-weight:500;
+	color:#fff;
+	font-size:26px;
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+	position:absolute;
+	opacity:0;
+	transition:0.7s;
+	text-align:center;
+}
+.layer:hover h3{
+    bottom:49%;
+	opacity:1;
+}
+.specials{
+     width:80%;
+	 margin:auto;
+	 padding-top:100px;
+	 text-align:center;
+	 font-size:30px;
+}
+.specials-col{
+     flex-basis:44%;
+	 border-radius:10px;
+	 margin-bottom:5;
+	 text-align:left;
+	 background:#fff3f3;
+	 padding:25px;
+	 cursor:pointer;
+	 display:flex;
+	 flex-direction:column;
+	 font-size:20px;
+	 
+	 
+}
+.specials-col p{	
+     padding:0;
+}	 
+.specials-col h3{	
+     color:red;
+     margin-top:15px;
+	 text-align:left;
+}	 
+.para{
+  font-size:18px;
+}
+footer{
+            position: relative;
+            width:100%;
+            background-color:#082146;
+            height: 250px;
+            display: flex;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .social_icons
+        footer .menu
+
+        {
+            position: relative;
+            display: flex;  
+        
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            
+        }
+
+        footer .social_icons li
+        footer .menu li
+
+        {
+            list-style: none;
+        }
+
+        footer .social_icons li a{
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+
+        }
+
+        footer .social_icons li a:hover{
+            transform: translateY(-10px);
+
+        }
+
+        footer .menu li a{
+            font-size: 0.8em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        footer .menu li a:hover{
+            opacity: 1;
+        }
+
+        footer p{
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size:15px;
+        }
+
+        footer .wave{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white url(sources/wave.png);
+            background-size: 1000px 100px;
+        }
+
+
+        footer .wave#wave1{
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWave 4s linear infinite;
+
+        }
+
+        @keyframes animateWave{
+            0%{
+                background-position-x: 1000px;
+
+            }
+            100%{
+                background-position-x: 0px;
+            }
+        }
+	
+	
+</style>
+<title>honeymoon trip</title>
+</head>
+<body>
+<header id="header">
+<nav>
+<div id="div">
+<div id="div1">
+<a href="#" class="logo">
+<img src="C:\Users\SINGH\Desktop\pics for project\logoprj.jpg" alt="logo"></a>
+</div>
+<div class="menu" id="div2">
+
+
+        <a href="C:\Users\SINGH\Desktop\CHITKARA\PROJECT\PROJECT.html">Home</a>
+		<a href="C:\Users\SINGH\Desktop\CHITKARA\PROJECT\gallery.html">Gallery</a>
+		<a href="#">About</a>
+		<a href="#">Packages</a>
+		<a href="#">Transport</a>
+</div>
+</div>
+</nav>
+</header>
+
+  
+<div class="bg">
+		  
+			  <div class="layer">
+			     <h3> Most Romantic And Best Honeymoon Destinations In India</h3>
+				 
+			 </div>
+		
+
+</div>
+</div>
+<br>
+<div class="header">
+       <h1 style="text-align:center;font-size:70px;color:orange;text-shadow:2px 3px red"> <b>HONEYMOON TRIP</b> </h1>
+</div>
+<br>
+
+
+<div style="font-size:20px;"><p><b>Choosing the best destination from the top Honeymoon destinations in India is a task. Almost all of these places will look like best Honeymoon destinations in India that will make your little vacation after marriage, as memorable as possible. Here are the top honeymoon destinations in India.</b></p><div><br>
+<br>
+<br>
+ <div class="trips">
+        <div class="places">
+		     <img src="https://blog.thomascook.in/wp-content/uploads/2017/11/Untitled-designuy-1.png">
+			  <div class="layer">
+			     <h3>Sonmarg, Jammu & Kashmir</h3>
+				 
+			 </div>
+		</div>
+		<div class="places">
+		     <img src="https://blog.thomascook.in/wp-content/uploads/2017/11/Untitled-designtrr-1.png">
+			  <div class="layer">
+			     <h3>Alleppey, Kerala</h3>
+			 </div>
+		</div>
+		<div class=" places">
+		     <img src="https://blog.thomascook.in/wp-content/uploads/2017/10/img-13-e1533111414958.jpg">
+			  <div class="layer">
+			     <h3>Dalhousie, Himachal Pradesh</h3>
+			 </div>
+		</div>
+		<div class=" places">
+		     <img src="https://images.livemint.com/img/2019/09/09/600x338/HC1VWOM6_1568050975567.jpg">
+			  <div class="layer">
+			     <h3>Mussoorie, Uttarakhand</h3>
+			 </div>
+		</div>
+		
+		<div class="places">
+		     <img src="https://blog.thomascook.in/wp-content/uploads/2017/10/img-23-e1533113725605.jpg" height="100%">
+			  <div class="layer">
+			     <h3>Kumarakom, Kerala</h3>
+			 </div>
+		</div>
+		<div class="places">
+		     <img src="https://images.livemint.com/img/2019/09/09/600x338/HC1VWOM6_1568050975567.jpg">
+			  <div class="layer">
+			     <h3>Shillong, Meghalaya</h3>
+			 </div>
+		</div>
+ <div>
+ <section class="specials">
+     <h1 style="text-shadow:2px 3px blue "><b>PLACES TO VISIT</b></h1><br>
+      <p>here are the places you can explore</p><br>	 
+      <div class="row">
+	       <div class="specials-col ">
+		       <div>
+			       <h3>Sonmarg, Jammu & Kashmir</h3>
+				   <br>
+			       <p class="para">Among the many top honeymoon destinations in India, Sonmarg is among the top three. The valleys and the snow covered mountains of Sonmarg seem as if they have come straight out of a fairy tale.<br>
+				   Thajiwas Glacier, Zoji-La Pass, Whitewater rafting at Baltal, Kashmir Great Lakes Trek etc. are some places to explore</p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>Alleppey, Kerala</h3><br>
+			       <p class="para">Alleppey is among the most fascinating Honeymoon Places in South India and welcomes every newly married couple to spend some time in one of their private houseboats. <br>
+				   Alappuzha Beach, Backwaters, Krishnapuram Palace, Vembanad, Nehru Trophy Snake Boat race, Bay Island Driftwood Museum etc. are some places to explore here.</p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>Dalhousie, Himachal Pradesh</h3><br>
+			       <p class="para">Often referred to as ‘Mini Switzerland’, Dalhousie is the ideal place for honeymoon in the summers. The verdant forest, mighty mountains and old colonial buildings add to the charm of visiting this place..<br>
+				   Hiking and trekking to nearby places, shopping, discovering beautiful buildings of colonial era and churches are some places to visit here</p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>Mussoorie, Uttarakhand</h3><br>
+			       <p class="para">Picked by many as their first choice for a romance in the mountains, Mussoorie is certainly one of the finest Places for Honeymoon in India, It is also famous as an exceedingly Romantic Place among India’s most sought hill stations.<br>
+				   Breath-taking attractions of Mussoorie including Gun Hill, Kempty Falls, Camel’s Back Road, Jwalaji Temple etc., </p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>Kumarakom, Kerala</h3><br>
+			       <p class="para">POne of the few places in the state to truly experience the beauty and wonders of Kerala’s lagoons and lovely backwaters, Kumarakom makes for an ideal honeymoon spot in India for the couples who seek peaceful togetherness.<br>
+				   Visit Vembanad Lake and Bird Sanctuary, stay in a romantic houseboat, explore the enchanting backwaters of Kerala</p>
+				   
+				</div><br><br><br>
+				<div>
+			       <h3>Dalhousie, Himachal Pradesh</h3><br>
+			       <p class="para">Shillong is preferred mostly by the couples who wish to have a lot of privacy. The silent mountains and the calm clouds in Shillong give you more peace that you would expect, making it one of the most Beautiful places in India for Honeymoon.<br>Things to Do: Mawsynram, Mawlynnong, Umiam Lake, Elephant Falls, Shillong Peak, Ward’s Lake, David Scott Trail etc.</p>
+				   
+				   
+				</div><br><br><br>
+			</div>
+ 
+ 
+ 
+ </section><br>
+<div style="font-size:20px; height:220px;"><h3 style="font-family:arial; text-align:center"><b>Conclusion:</b></h3>
+<br>
+<p style="font-size:18px; background-color:aliceblue; text-align:center; border-radius:10px;">The beauty of spending Honeymoon in India is you get to experience a diverse lifestyle. India has some of the best Honeymoon destinations in India on a budget. 
+With amazing options, you can surely find a romantic spot to spend some quality time. 
+So, pack your bags and book tickets to these places to have the best experiences of your life</p></div>
+</body>
+<footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+        <ul class="social_icons" style="display: flex; list-style: none;">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/hHTteL5zbs8">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+			<br>
+        </ul>
+        <ul class="menu" style="display: flex; list-style: none;">
+            <li>
+                <a class="a" href="PROJECT.html">Home</a>
+            </li>
+            <li>
+                <a class="a" href="packages.html">Packages</a>
+            </li>
+            <li>
+                <a class="a" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a class="a" href="assignment.html">About us</a>
+            </li>
+            <li>
+                <a class="a" href="travelf.html">Plan you trip</a>
+            </li>
+        </ul>
+        <p><h2 style="color:#fff;">India Tours and Travels</h2></p>
+		
+        
+    </footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

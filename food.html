@@ -1,0 +1,383 @@
+<html>
+<head>
+      <meta name="viewport " content="width=device-widh,initial-scale=1.0">
+	  <title>FOOD
+	  
+	  </title>
+</head>
+<style>
+ *{
+   margin:0;
+   padding:0;
+   font-family:'roboto',sans-serif;
+   box-sizing:border-box;
+  
+    
+}
+header{
+    height:60px;
+	
+	position:relative;
+}
+#div{
+  display:flex;
+}
+#div1{
+   flex:flex-wrap;
+   width:25%;
+}
+#div2{
+    flex:flex-wrap;
+	width:75%;
+	padding-top:20px;
+	
+}
+.menu{
+    padding:3px;
+	display:flex;
+	justify-content:space-around;
+    font-weight:bold;
+}
+.menu a{
+    color:purple;
+	text-decoration:none;
+}
+.menu a:hover{
+     color:red;
+	 
+}
+a.logo{
+   left:15px;
+   position:absoulte;
+   top:5px;
+   z-index:99;
+}
+a.logo img{
+     margin-left:15px;
+	 margin-top:30px;
+     border-radius:15px;
+	 height:50px;
+	 width:50px;
+}
+h1{
+  text-align:center;
+  color:green;
+  padding:20px;
+}
+.item_s{
+       display:grid;
+	   grid-template-columns:repeat(3,1fr);
+	   padding:30px 20px;
+	   grid-column-gap:20px;
+	   grid-row-gap:30px;
+	   
+}
+.ite_m img{
+         width:100%;
+		 height:300px;
+		 object-fit:cover;
+		 cursor:pointer;
+		 transition: 0.2s ease;
+      
+}
+.ite_m img:hover{
+         transform:scale(1.04);
+		 
+}
+.ite_m h3{
+           padding:5px;
+		   text-align:center;
+		   text-shadow:0.9px 0.9px 0.9px blue;
+            font-size:40px;
+
+}
+.ite_m p{
+        font-size:20px;
+		font-style:cursive;
+		font-family:sans-serif;
+       
+		
+		display:block;
+		margin:0 auto;
+		
+}
+.gallary{
+      height:80%;
+	  width:100%;
+	  display:flex;
+	  flex-direction:row;
+	  margin:5% auto 0;
+	  box-sizing:border-box;
+	  
+}
+.image-box{
+      margin:0 1%;
+	  flex-grow:1;
+	  flex-basis:0;
+	  transition:0.5s;
+	  
+	  
+}
+.image-box img{
+      width:100%;
+	  height:80vh;
+	  object-fit:cover;
+	  transition:0.5s;
+}
+.image-box:hover{
+      flex-basis:50%;
+}
+
+footer{
+            position: relative;
+            width:1500px;
+            background-color:#082146;
+            min-height: 300px;
+            display: flex;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .social_icons
+        footer .menu
+
+        {
+            position: relative;
+            display: flex;  
+        
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            
+        }
+
+        footer .social_icons li
+        footer .menu li
+
+        {
+            list-style: none;
+        }
+
+        footer .social_icons li a{
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+
+        }
+
+        footer .social_icons li a:hover{
+            transform: translateY(-10px);
+
+        }
+
+        footer .menu li a{
+            font-size: 1.2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        footer .menu li a:hover{
+            opacity: 1;
+        }
+
+        footer p{
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size:15px;
+        }
+
+        footer .wave{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white url(sources/wave.png);
+            background-size: 1000px 100px;
+        }
+
+
+        footer .wave#wave1{
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWave 4s linear infinite;
+
+        }
+
+        @keyframes animateWave{
+            0%{
+                background-position-x: 1000px;
+
+            }
+            100%{
+                background-position-x: 0px;
+            }
+        }
+        
+
+
+	 
+</style>
+<body>
+<header>
+<nav>
+<div id="div">
+<div id="div1">
+<a href="#" class="logo">
+<img src="https://image.shutterstock.com/z/stock-vector-india-travel-and-tours-logo-vector-travel-company-logo-design-country-map-leisure-travel-logo-526784530.jpg" alt="logo"></a>
+</div>
+<div class="menu" id="div2">
+
+
+        <a href="header.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="abtus.html">About</a>
+		<a href="packages">Packages</a>
+		
+</div>
+</div>
+</nav>
+</header>
+ <h1 style="font-size:80px;text-shadow:0.5px 0.6px 0.4px orange; ">INDIAN FOOD</h1>
+<section class="item_s ">
+      <div class="ite_m">
+	  <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/bvitsplhietanq73wulw">
+	  <h3>PUNJABI FOOD</h3>
+	  <p>You must try punjabi regional food-SARSO KA SAAG with MAKKI KI ROTI and lassi</p>
+	  </div>
+	  <div class="ite_m">
+	  <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/Kesar-Da-Dhaba1.jpg">
+	  <h3>AMRITSARI FOOD</h3>
+	  <p>If you visit amritsar,you should must try famous Amritsari Kulcha </p>
+	  </div>
+	  <div class="ite_m">
+	  <img src="https://www.secondrecipe.com/wp-content/uploads/2020/10/fafda-jalebi.jpg">
+	  <h3>GUJARATI FOOD</h3>
+	  <P>Gujarat is famous for FAFDA,JALEBI and dhokla.</P>
+	  </div>
+	  <div class="ite_m">
+	  <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/jcsawrpoz8nktwsrz7yn">
+	  <h3>SOUTH INDIAN FOOD</h3>
+	  <P>if you visit south india you should must try DOSA,IDLI SAMBAR,VADA,etc</P>
+	  </div>
+	  <div class="ite_m">
+	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCnCH1XqBPDYTee8QG3XQBqFx1ITtXJVMm3Q&usqp=CAU">
+	  <h3>EAST INDIA CUISINE</h3>
+	  <P> you can try Rasgulla,Dalma,Assamese Fish Curry</p>
+	  </div>
+	  <div class="ite_m">
+	  <img src="https://lh3.googleusercontent.com/N0yZJNX4nNuFZz84VyYMLTozTNKB_Aaabi89ajLRhi-3RC51G64OdsVDTbHq9_8hw-Otjp5QhKTK2NnsZcqaCPEDNySJ=w1000">
+	  <h3>RAJASTHANI FOOD</h3>
+	  <p>u should must try Dal Baati Churma,pittod ki sabzi,besan Childa Sabzi.</p>
+	  </div>
+	   
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+</section>
+<section>
+<h1 style="font-size:60px;text-shadow:0.5px 0.6px 0.4px orange; ">EXPLORE MORE</H1>
+<div class="gallary">
+       <div class="image-box">
+	  <img src="https://www.swantour.com/blogs/wp-content/uploads/2019/01/foods-in-north-east-india.jpg">
+	   
+	
+	  </div><br>
+       <div class="image-box">
+	  <img src="https://media.easemytrip.com/media/Blog/India/637006193676361092/637006193676361092ia4gXG.jpg ">
+	    
+	  </div><br>
+	   <div class="image-box">
+	  <img src="https://previews.123rf.com/images/desmondlwf/desmondlwf0908/desmondlwf090800101/5412688-indian-traditional-food-.jpg ">
+	    
+	  </div><br>
+	   <div class="image-box">
+	  <img src="https://static1.thetravelimages.com/wordpress/wp-content/uploads/2019/08/3-Dhokla.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5 ">
+	   
+	  </div><br>
+	   <div class="image-box">
+	  <img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-06/23/15/campaign_images/webdr07/26-traditional-indian-foods-that-will-change-your-1-7312-1403550756-15_big.jpg ">
+	   
+	  </div><br>
+	   <div class="image-box">
+	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThoyFjcsHDR_GiKo7EuqlWl1mJqOeHxWks7Q&usqp=CAU">
+	  </div><br>
+</div>	 
+	 </section>
+	 
+	 
+	 
+	 
+	 
+	 
+</body>
+
+<br>
+<br>
+<br>
+<footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+        <ul class="social_icons" style="display: flex; list-style: none;">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/hHTteL5zbs8">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu" style="display: flex; list-style: none;">
+            <li>
+                <a class="a" href="header.html">Home</a>
+            </li>
+            <li>
+                <a class="a" href="packages.html">Packages</a>
+            </li>
+            <li>
+                <a class="a" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a class="a" href="abtus.html">About us</a>
+            </li>
+            <li>
+                <a class="a" href="plan.html">Plan you trip</a>
+            </li>
+        </ul>
+        <p><h1 style="color:#fff;">India Tours and Travels</h1></p>
+		
+        
+    </footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>s
+</html>
